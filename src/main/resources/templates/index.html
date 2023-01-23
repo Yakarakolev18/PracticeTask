@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Link references</title>
+</head>
+<body>
+<h1>Link references</h1>
+<ul>
+  <li><a th:href="@{/numbers(n = 20)}">example: N IS 20; number division by 3</a></li>
+  <li><a th:href="@{/sum-numbers(n = 10)}">example: N IS 10; the sum of all numbers from 1 to N</a></li>
+  <li><a th:href="@{/words(word='Hello', n = 5)}">example: the word IS "Hello"; the word is repeated N times</a></li>
+</ul>
+</body>
+</html>
