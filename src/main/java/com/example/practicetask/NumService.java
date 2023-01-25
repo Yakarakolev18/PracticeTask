@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class NumService {
-    public List<Integer> getNumbersDivisibleByThree(int n) {
+    public List<Integer> divideByThree(int n) {
         List<Integer> numbers = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0) {

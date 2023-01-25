@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sum-numbers")
 public class NumberSumController {
 
-    private SumNumbersService sumNumbersService;
+    private SumNumService sumNumbersService;
 
     @Autowired
-    public SumNumbersController(SumNumbersService sumNumbersService) {
+    public NumberSumController(SumNumService sumNumbersService) {
         this.sumNumbersService = sumNumbersService;
     }
 

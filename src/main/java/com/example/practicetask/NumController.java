@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/numbers")
 public class NumController {
 
-    private NumbersService numbersService;
+    private NumService numbersService;
 
     @Autowired
-    public NumController(NumbersService numbersService) {
+    public NumController(NumService numbersService) {
         this.numbersService = numbersService;
     }
 
     @GetMapping
     public List<Integer> getNumbers(@RequestParam int n) {
-        return numbersService.getNumbersDivisibleByThree(n);
+        return numbersService.divideByThree(n);
     }
 }

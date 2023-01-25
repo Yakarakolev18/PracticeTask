@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ApplicationConfiguration {
     @Bean
-    public SumNumbersService sumNumbersService() {
-        return new SumNumbersService();
+    public SumNumService sumNumbersService() {
+        return new SumNumService();
     }
 }
