@@ -19,6 +19,6 @@ public class NumberSumController {
 
     @GetMapping
     public int getSum(@RequestParam int n) {
-        return sumNumbersService.calculateSum(n);
+        return sumNumbersService.theSum(n);
     }
 }
